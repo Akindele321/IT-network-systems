@@ -32,3 +32,9 @@ ip route 10.1.2.0 255.255.255.0 10.0.0.2
 ip route 10.1.3.0 255.255.255.0 10.0.0.2
 
 # Screenshots
+![ccna-1](ccna-1.png)
+![ccna-2](ccna-2.png)
+![ccna-3](ccna-3.png)
+![ccna-4](ccna-4.png)
+![ccna-5](ccna-5.png)
+![ccna-6](ccna-6.png)
