@@ -28,4 +28,5 @@ On R1, I configured DNS name resolution:
 
 ## Screenshots
 ![comp-1](comp-1.png)
-![comp-2](comp-2.png) ![comp-3](comp-3.png)
+![comp-2](comp-2.png)
+![comp-3](comp-3.png)
