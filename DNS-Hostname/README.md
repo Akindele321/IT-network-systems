@@ -21,9 +21,6 @@ Configured the DNS server with:
 - IP address: `10.10.10.10`
 - Default gateway: `10.10.10.2`
 
-Evidence:
-![DNS Server Settings](verification/dns-server-settings.png)
-
 ---
 
 ### 2) R1 DNS Client Settings
