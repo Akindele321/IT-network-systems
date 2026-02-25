@@ -34,3 +34,12 @@ Networks:
 3. Router DNS client configuration was missing
 
 ## Screenshots
+![sound-1](sound-1.png)
+![sound-2](sound-2.png)
+![sound-3](sound-3.png)
+![sound-4](sound-4.png)
+![sound-5](sound-5.png)
+![sound-6](sound-6.png)
+![sound-7](sound-7.png)
+
+
