@@ -29,7 +29,6 @@ Networks:
 ### 1️⃣ R3 Could Not Reach DNS Server
 
 # 🧠 Root Causes Identified
-
 1. R2 interface toward DNS network was administratively down
 2. DNS service was disabled on the DNS server
 3. Router DNS client configuration was missing
