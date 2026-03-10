@@ -9,3 +9,9 @@ After the configuration, the routing tables were checked using `show ip route` t
 Finally, connectivity was tested from a PC using `ping`. The successful replies confirm that routing between the networks is working and that RIP is correctly exchanging routing information between the routers.
 
 ## Screenshots
+![configure-1](configure-1.png)
+![configure-2](configure-2.png)
+![configure-3](configure-3.png)
+![configure-4](configure-4.png)
+![configure-5](configure-5.png)
+![configure-6](configure-6.png)
