@@ -16,31 +16,21 @@ Philips Hue Bridge + 2x smart bulbs — IoT test devices
 30	Servers	192.168.30.0/24
 40	Guest	192.168.40.0/2
 
-## Architecture
+**Switch port → VLAN mapping**:
 
-​```text
-Internet
-  |
-WiFi extender --(Ethernet)--> USB NIC --> Proxmox (vmbr1) --> OPNsense WAN
-                                                                    |
-                                                          OPNsense (router/firewall)
-                                                                    |
-                                                    802.1q trunk (Proxmox vmbr0)
-                                                                    |
-                                                       Cisco 2950 (fa0/1 trunk)
-                                                     /        |         |        \
-                                              fa0/2       fa0/3      fa0/4     fa0/5
-                                            VLAN 10       VLAN 20    VLAN 30   VLAN 40
-                                          Management       IoT      Servers    Guest
-                                                          (Hue)   (Home Assistant)
-​```
+Switch Port	VLAN	Name	Connects To
+fa0/2	10	Management	Admin laptop
+fa0/3	20	IoT	Philips Hue Bridge
+fa0/4	30	Servers	Home Assistant
+fa0/5	40	Guest	(reserved)
 
-What's Running
+
+**What's Running**
 Proxmox VE — bare-metal hypervisor on the Dell, hosting both VMs below
 OPNsense — virtualized router/firewall doing router-on-a-stick routing across all four VLANs, plus WAN/NAT
 Home Assistant OS — smart home hub, living on the Servers VLAN, integrated with the Hue Bridge
 
-Build gallery
+**Build gallery**
 1. Smart bulbs live
 Two Philips Hue smart bulbs connected and controllable through Home Assistant,
 confirming the IoT VLAN could reach the Home Assistant server end to end. This
