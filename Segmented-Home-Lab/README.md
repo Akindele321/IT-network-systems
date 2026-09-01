@@ -26,9 +26,9 @@ WiFi extender --(Ethernet)--> USB NIC --> Proxmox (vmbr1) --> OPNsense WAN
                                                     802.1q trunk (Proxmox vmbr0)
                                                                     |
                                                        Cisco 2950 (fa0/1 trunk)
-                                                    /        |         |        \
+                                                     /        |         |        \
                                               fa0/2       fa0/3      fa0/4     fa0/5
-                                           VLAN 10       VLAN 20    VLAN 30   VLAN 40
+                                            VLAN 10       VLAN 20    VLAN 30   VLAN 40
                                           Management       IoT      Servers    Guest
                                                           (Hue)   (Home Assistant)
 What's Running
