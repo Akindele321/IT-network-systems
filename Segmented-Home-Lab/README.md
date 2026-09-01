@@ -41,7 +41,10 @@ confirming the IoT VLAN could reach the Home Assistant server end to end. This
 was the payoff after getting VLAN segmentation, routing, and the Zigbee bridge
 integration all working together.
 
-3. Desk setup
+2. Desk setup
+
+![edit-1](edit-1.png)
+
    The physical build: a Dell PC running Proxmox as the hypervisor,
    a Cisco Catalyst 2950 switch handling VLAN trunking, and a laptop
    for managing everything through the web GUIs. The laptop screen
