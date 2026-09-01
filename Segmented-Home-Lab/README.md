@@ -16,8 +16,9 @@ Philips Hue Bridge + 2x smart bulbs — IoT test devices
 30	Servers	192.168.30.0/24
 40	Guest	192.168.40.0/2
 
-**Architecture**:
-​```
+## Architecture
+
+​```text
 Internet
   |
 WiFi extender --(Ethernet)--> USB NIC --> Proxmox (vmbr1) --> OPNsense WAN
@@ -33,6 +34,7 @@ WiFi extender --(Ethernet)--> USB NIC --> Proxmox (vmbr1) --> OPNsense WAN
                                           Management       IoT      Servers    Guest
                                                           (Hue)   (Home Assistant)
 ​```
+
 What's Running
 Proxmox VE — bare-metal hypervisor on the Dell, hosting both VMs below
 OPNsense — virtualized router/firewall doing router-on-a-stick routing across all four VLANs, plus WAN/NAT
