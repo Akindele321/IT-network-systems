@@ -1,4 +1,5 @@
 **Segmented Home Lab: VLANs, Virtualized Router, and IoT Isolation**
+
 A home network security lab built on a single repurposed Dell PC, using Proxmox, 
 OPNsense, and a Cisco Catalyst 2950 switch to segment a network into isolated VLANs
 then integrating Home Assistant and Philips Hue to prove the segmentation works with
