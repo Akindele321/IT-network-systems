@@ -33,38 +33,39 @@ Home Assistant OS — smart home hub, living on the Servers VLAN, integrated wit
 
 **Build gallery**
 1. Smart bulbs live
+   ![light-bulb](light-bulb.png)
 Two Philips Hue smart bulbs connected and controllable through Home Assistant,
 confirming the IoT VLAN could reach the Home Assistant server end to end. This
 was the payoff after getting VLAN segmentation, routing, and the Zigbee bridge
 integration all working together.
 
-2. Desk setup
+3. Desk setup
    The physical build: a Dell PC running Proxmox as the hypervisor,
    a Cisco Catalyst 2950 switch handling VLAN trunking, and a laptop
    for managing everything through the web GUIs. The laptop screen
    shows OPNsense's DHCP lease table confirming devices were pulling
    addresses correctly on their assigned VLANs.
 
-3. Hardware laid out
+4. Hardware laid out
    Core hardware for the lab: the Cisco 2950 switch, a Philips
    Hue Bridge with bulbs for the IoT segment, and a WiFi extender
    used as a wireless WAN uplink. The extender added internet
    access to the lab without running an Ethernet cable down from
    the router two floors below.
 
-4. Home Assistant dashboard
+5. Home Assistant dashboard
    Home Assistant's dashboard once fully onboarded, showing organized
    Areas and active light entities integrated through the Hue Bridge.
    Reaching this screen required giving the network real internet access
    first, since Home Assistant Core wouldn't finish installing while
    completely offline.
 
-5. OPNsense dashboard
+6. OPNsense dashboard
    OPNsense's dashboard showing all core services active and WAN successfully
    holding a DHCP lease. Getting here took real troubleshooting, more in the
    write-up below.
 
-6. Proxmox datacenter view
+7. Proxmox datacenter view
    Proxmox's summary view showing OPNsense and Home Assistant running as separate
    VMs on one physical host, sharing the Dell's CPU, RAM, and storage.
 
