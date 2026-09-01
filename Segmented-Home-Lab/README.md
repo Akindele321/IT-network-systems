@@ -61,19 +61,28 @@ integration all working together.
    access to the lab without running an Ethernet cable down from
    the router two floors below.
 
-5. Home Assistant dashboard
+4. Home Assistant dashboard
+
+![home-assistant](home-assistant.png)
+
    Home Assistant's dashboard once fully onboarded, showing organized
    Areas and active light entities integrated through the Hue Bridge.
    Reaching this screen required giving the network real internet access
    first, since Home Assistant Core wouldn't finish installing while
    completely offline.
 
-6. OPNsense dashboard
+5. OPNsense dashboard
+
+![opnsense-dashboard](opnsense-dashboard.png)
+
    OPNsense's dashboard showing all core services active and WAN successfully
    holding a DHCP lease. Getting here took real troubleshooting, more in the
    write-up below.
 
-7. Proxmox datacenter view
+6. Proxmox datacenter view
+
+![proxmox](proxmox.png)
+
    Proxmox's summary view showing OPNsense and Home Assistant running as separate
    VMs on one physical host, sharing the Dell's CPU, RAM, and storage.
 
