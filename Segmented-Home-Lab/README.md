@@ -51,7 +51,10 @@ integration all working together.
    shows OPNsense's DHCP lease table confirming devices were pulling
    addresses correctly on their assigned VLANs.
 
-4. Hardware laid out
+3. Hardware laid out
+
+![equipment](equipment.jpeg)
+
    Core hardware for the lab: the Cisco 2950 switch, a Philips
    Hue Bridge with bulbs for the IoT segment, and a WiFi extender
    used as a wireless WAN uplink. The extender added internet
