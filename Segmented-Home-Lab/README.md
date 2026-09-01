@@ -33,7 +33,9 @@ Home Assistant OS — smart home hub, living on the Servers VLAN, integrated wit
 
 **Build gallery**
 1. Smart bulbs live
+
    ![light-bulb](light-bulb.png)
+   
 Two Philips Hue smart bulbs connected and controllable through Home Assistant,
 confirming the IoT VLAN could reach the Home Assistant server end to end. This
 was the payoff after getting VLAN segmentation, routing, and the Zigbee bridge
